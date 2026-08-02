@@ -325,3 +325,330 @@ clearInterval(timer);
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sinha IT | প্রযুক্তির বিশ্বস্ত ঠিকানা</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:SolaimanLipi,Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#222;
+}
+
+header{
+    background:linear-gradient(135deg,#0066ff,#00b894);
+    color:#fff;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-circle{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#fff;
+    color:#0066ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size:38px;
+    color:#0066ff;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.btn{
+    margin-top:30px;
+    display:inline-block;
+    background:#0066ff;
+    color:#fff;
+    padding:14px 35px;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0049b7;
+}
+
+.section{
+    padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:40px;
+    color:#0066ff;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0066ff;
+}
+
+.counter{
+    background:#0066ff;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.counter h2{
+    font-size:50px;
+}
+
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+}
+
+button{
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:30px;
+}
+
+.section-title{
+font-size:28px;
+}
+
+.logo h2{
+font-size:20px;
+}
+
+.logo-circle{
+width:45px;
+height:45px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+
+<div class="logo-circle">
+SI
+</div>
+
+<h2>Sinha IT</h2>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>স্বাগতম Sinha IT-এ</h1>
+
+<p>
+
+প্রযুক্তির বিশ্বস্ত ঠিকানা। আমরা ওয়েবসাইট ডিজাইন, সফটওয়্যার ডেভেলপমেন্ট,
+মোবাইল অ্যাপ, গ্রাফিক্স ডিজাইন, ডিজিটাল মার্কেটিং এবং আইটি সাপোর্ট প্রদান করি।
+
+</p>
+
+<a href="#service" class="btn">আমাদের সেবা</a>
+
+</section>
+
+<section class="section" id="service">
+
+<h2 class="section-title">
+আমাদের সেবাসমূহ
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>ওয়েব ডিজাইন</h3>
+<p>আধুনিক ও মোবাইল-ফ্রেন্ডলি ওয়েবসাইট তৈরি করা হয়।</p>
+</div>
+
+<div class="card">
+<h3>ওয়েব ডেভেলপমেন্ট</h3>
+<p>PHP, Laravel, JavaScript এবং অন্যান্য প্রযুক্তিতে ওয়েব অ্যাপ তৈরি।</p>
+</div>
+
+<div class="card">
+<h3>মোবাইল অ্যাপ</h3>
+<p>Android এবং iOS অ্যাপ ডেভেলপমেন্ট।</p>
+</div>
+
+<div class="card">
+<h3>গ্রাফিক্স ডিজাইন</h3>
+<p>লোগো, ব্যানার, পোস্টার, থাম্বনেইল ডিজাইন।</p>
+</div>
+
+<div class="card">
+<h3>ডিজিটাল মার্কেটিং</h3>
+<p>Facebook, YouTube এবং Google মার্কেটিং।</p>
+</div>
+
+<div class="card">
+<h3>আইটি সাপোর্ট</h3>
+<p>কম্পিউটার, নেটওয়ার্ক এবং সফটওয়্যার সাপোর্ট।</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="counter">
+
+<h3>আমাদের সম্পন্ন প্রজেক্ট</h3>
+
+<h2 id="count">0</h2>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+কেন Sinha IT?
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>✔ অভিজ্ঞ টিম</h3>
+<p>দক্ষ ও অভিজ্ঞ ডেভেলপার দ্বারা কাজ সম্পন্ন করা হয়।</p>
+</div>
+
+<div class="card">
+<h3>✔ দ্রুত সেবা</h3>
+<p>সময়ের মধ্যে কাজ সম্পন্ন করার নিশ্চয়তা।</p>
+</div>
+
+<div class="card">
+<h3>✔ ২৪/৭ সাপোর্ট</h3>
+<p>প্রয়োজন হলে সবসময় সহযোগিতা।</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Sinha IT</h2>
+
+<p>প্রযুক্তির বিশ্বস্ত ঠিকানা</p>
+
+<br>
+
+<p>© ২০২৬ Sinha IT | সর্বস্বত্ব সংরক্ষিত</p>
+
+</footer>
+
+<script>
+
+let count=0;
+
+let target=500;
+
+let speed=10;
+
+let counter=document.getElementById("count");
+
+let timer=setInterval(function(){
+
+count++;
+
+counter.innerHTML=count+"+";
+
+if(count>=target){
+
+clearInterval(timer);
+
+}
+
+},speed);
+
+</script>
+
+</body>
+</html>
