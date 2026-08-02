@@ -1,0 +1,20 @@
+//@version=5
+indicator("USD Buy Sell Signals", overlay=true)
+
+fastEMA = ta.ema(close, 9)
+slowEMA = ta.ema(close, 21)
+
+buySignal = ta.crossover(fastEMA, slowEMA)
+sellSignal = ta.crossunder(fastEMA, slowEMA)
+
+plot(fastEMA, color=color.green, title="EMA 9")
+plot(slowEMA, color=color.red, title="EMA 21")
+
+plotshape(buySignal, title="BUY", location=location.belowbar,
+     color=color.green, style=shape.labelup, text="BUY")
+
+plotshape(sellSignal, title="SELL", location=location.abovebar,
+     color=color.red, style=shape.labeldown, text="SELL")
+
+alertcondition(buySignal, title="Buy Alert", message="BUY Signal")
+alertcondition(sellSignal, title="Sell Alert", message="SELL Signal")
